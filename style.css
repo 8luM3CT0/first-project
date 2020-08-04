@@ -1,0 +1,88 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+}
+
+
+/*:root {
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+}*/
+
+body {
+    --hue: var(--hue-neutral);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgoldenrodyellow;
+}
+
+body.correct {
+    background-color: aqua;
+}
+
+body.wrong {
+    background-color: maroon;
+}
+
+.container {
+    height: 400px;
+    width: 800px;
+    max-width: 80%;
+    background-color: skyblue;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn {
+    background-color: blanchedalmond;
+    border: 1px solid darkkhaki;
+    border-radius: 15px;
+    padding: 10px 10px;
+    outline: none;
+}
+
+.btn.hover {
+    border-color: black;
+}
+
+.btn.correct {
+    border-color: aqua;
+}
+
+.btn.wrong {
+    border-color: maroon;
+}
+
+.start-btn,
+.next-btn {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 2.0rem;
+    padding: 10px 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
